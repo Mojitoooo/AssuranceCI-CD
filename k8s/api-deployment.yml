@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-service
-          image: gcr.io/gentle-habitat-425314-m2/api-service:
+          image: gcr.io/gentle-habitat-425314-m2/api-service:latest
           ports:
             - containerPort: 8765
 ---
