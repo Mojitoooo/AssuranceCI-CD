@@ -1,4 +1,4 @@
-name: Contract Build and Deploy to GKE
+name: Assurance Build and Deploy to GKE
 
 on:
   push:
@@ -7,9 +7,9 @@ on:
 
 env:
   GCP_PROJECT: gentle-habitat-425314-m2
-  IMAGE_NAME: contract-service
-  DEPLOY_FILE: contract-deployment.yml
-  SERVICE_FOLDER: Contrat-Service
+  IMAGE_NAME: assurance-service
+  DEPLOY_FILE: assurance-deployment.yml
+  SERVICE_FOLDER: Souscription-assurance-Service
   IMAGE_TAG: ${{ github.sha }}
 
 jobs:

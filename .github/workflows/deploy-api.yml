@@ -3,7 +3,7 @@ name: API Build and Deploy to GKE
 on:
   push:
     branches:
-      - qssq
+      - main
 
 env:
   GCP_PROJECT: gentle-habitat-425314-m2
