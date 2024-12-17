@@ -51,8 +51,7 @@ jobs:
             # mandatory
             -Dsonar.projectKey=moetez_moetez
             -Dsonar.organization=moetez
-            -Dsonar.java.binaries=**/target/classes
-
+            -Dsonar.java.binaries=target/classes
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
