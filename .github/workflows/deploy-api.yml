@@ -43,8 +43,10 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v4
         env: 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=moetez_moetez
         with:
           projectBaseDir: api-gateway
+
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
