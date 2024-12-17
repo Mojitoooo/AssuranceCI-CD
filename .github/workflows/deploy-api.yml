@@ -39,12 +39,6 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/api-gateway/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
 
-      - name: SonarQubeScan2
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v3
-            with:
-              fetch-depth: 0  
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env: 
