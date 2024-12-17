@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - master
 
 env:
   GCP_PROJECT: gentle-habitat-425314-m2
